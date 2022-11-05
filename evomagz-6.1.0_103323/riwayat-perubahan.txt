@@ -1,0 +1,25 @@
+v.6.0.0 (14 Maret 2021)
+- Update layout blogger versi 3
+- Update form komentar versi baru
+- Penambahan Widget:
+   - Kode Pengaturan Template
+   - Custom CSS
+   - Custom JavaScript Footer
+   - Icon Media Sosial
+   - Featured Post
+   - Kode Iklan di Dalam Artikel
+   - Teks Footer
+   - dll.
+- Optimasi kecepatan loading
+- Ganti icon FontAwesome dengan icon SVG
+- Penambahan fitur lazy load
+- Penambahan fitur "baca juga" di tengah artikel
+- Penambahan pilihan warna default biru, merah, hijau, hitam, pink
+- Perbaikan widget recent posts berdasarkan label
+- Perbaikan schema Markup
+- Perbaikan desain
+- Perbaikan fitur related posts
+- dan beberapa perbaikan-perbaikan lainnya
+v.6.1.0 (25 Maret 2021)
+- Perbaikan iklan AdSense di tengah artikel keluar batas
+- Perbaikan nomor di widget Popular Posts tidak urut

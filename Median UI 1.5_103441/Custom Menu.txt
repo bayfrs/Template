@@ -1,0 +1,22 @@
+paste di bawah Contact
+<!--[ Standar menu ]-->
+                    <li>
+                      <a class='link' href='#' itemprop='url'>
+                        <!--[ Icon ]-->
+                        <b:include name='folder-icon'/>
+
+                        <!--[ Title navigation ]-->
+                        <span class='name new' itemprop='name'>Custom Menu 01</span>
+                      </a>
+                    </li>
+
+                    <!--[ Standar menu ]-->
+                    <li>
+                      <a class='link' href='#' itemprop='url'>
+                        <!--[ Icon ]-->
+                        <b:include name='folder-icon'/>
+
+                        <!--[ Title navigation ]-->
+                        <span class='name free' itemprop='name'>Custom Menu 02</span>
+                      </a>
+                    </li>

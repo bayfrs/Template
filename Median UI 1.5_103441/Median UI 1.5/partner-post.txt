@@ -1,0 +1,128 @@
+<style>
+/* partner page by wendy code ubah warna cari kode #f89000 */
+.wc-pt-usr img{position:absolute;width:85px;border-radius:30px 30px 5px;top:15px}
+.wc-pt-usr{position:relative;padding:15px;padding-bottom:0;border-radius:30px 0 30px;;background-color:#fefefe;box-shadow:0 2px 12px -2px rgb(0 0 0 / 12%);border:1px solid #ddd;margin-top:25px}
+.wc-pt-usr h2{margin-left:100px;margin-top:5px;font-size:16px;color:#969696}
+.wc-pt-usr h2:before{content:attr(aria-label);position:absolute;margin-top:25px;font-size:12px;font-style:italic;color:#f89000}
+.wc-pt-usr p{font-size:12px;color:#48525c;line-height:1.3em}
+.wc-pt-usr .wc-pt-kt{margin-left:60px;display:flex;list-style:none;font-size:10px;color:#48525c;}
+.wc-pt-usr .wc-pt-kt li{margin-right:10px;margin-top:10px;border-radius:3px;border:1px solid #ddd;padding:5px;line-height:1.5em;white-space:nowrap;}
+.wc-pt-usr a{display:flex;align-items:center;margin-bottom:10px;font-size:14px;color:#f89000}
+.wc-pt-usr a:before{content:attr(aria-label)}
+.wc-pt-usr a svg{height:18px;margin:5px;stroke:#f89000!important;fill:none!important}
+.wc-ptpop-wrap,.wc-ptsypop-wrap{position:fixed;height:100%;width:100%;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:9999999;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);z-index:9999999;opacity:0;visibility:hidden;transition:all 0.3s ease}
+.wc-ptpop-wrap.aktif,.wc-ptsypop-wrap.aktif{opacity:1;visibility:visible}
+.wc-ptpop-wrap .wc-ptstr-pop h2,.wc-ptsypop-wrap .wc-ptsy-pop h2{font-size:16px;color:#969696;text-align:center}
+a.wc-ptpop-btn{display:flex;align-items:center;justify-content:center;padding:15px;outline:0;border:0; border-radius:3px;line-height:1em; color:#fff;background-color:#f89000;font-size:14px;font-weight:bold;white-space:nowrap;overflow:hidden;width:96;margin:30px 10px}
+.wc-ptpop-cls{position:absolute;top:15px;right:15px;width:30px;height:30px;background:#f3f3f3;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z' fill='%23878787'/%3E%3C/svg%3E");background-repeat:no-repeat;background-size:25px;background-position:center;cursor:pointer;border-radius:50%;z-index:10}
+.wc-btnpt-wrap{display:flex;justify-content:center;margin:20px 0 0}
+.wc-ptstr-pop,.wc-ptsy-pop{position:relative;top:50%;left:50%;padding:20px;display:inline-block;background:#fefefe;flex-direction:column;width:100%;max-width:800px;max-height:calc(100% - 40px);border-radius:5px;transform: translate(-50% , -50%) scale(0.97);overflow:auto}
+.wc-pt-inp{position:relative;margin:20px auto;}
+.wc-pt-inp input{font-size:15px;padding:15px 0 15px 12px;display:block;width:100%;border:1px solid #ddd;border-radius:5px}
+.wc-pt-inp input[type=text]:focus,.blogContent .widget input[type=text]:focus{outline:none;border-color:#f89000!important}
+.wc-pt-inp input[type=text]::-webkit-input-placeholder{color:#a5a5a5;font-size:12px}
+.wc-pt-inp label{color:#999;border-radius:20px;font-size:14px;font-weight:500;position:absolute;pointer-events:none;left:15px;top:15px;transition:.2s ease all}
+.wc-pt-inp input:valid~label{top:-25px!important;font-size:13px;color:#f89000;font-weight:700;padding:1px 7px;margin:10px 0 0 -5px;background:#fefefe}
+#wcpt-made-by{display:none}
+  
+/* CSS darkmode sesuaikan classnya jika berbeda atau hapus bagian ini */
+.darkMode .wc-pt-usr,.darkMode .wc-ptsy-pop,.darkMode .wc-ptpop-cls,.darkMode .wc-ptstr-pop,.darkMode .wc-pt-inp input:valid~label{background-color:#2d2d30}
+.darkMode .wc-pt-usr p,.darkMode .wc-pt-usr h2,.darkMode .wc-pt-kt,.darkMode .wc-ptsy-pop p,.darkMode .wc-ptsy-pop h2,.darkMode .wc-ptstr-pop p,.darkMode .wc-ptstr-pop h2{color:#fefefe}
+.darkMode .wc-pt-usr,.darkMode .wc-pt-kt li{border-color:rgba(255,255,255,.1)}
+</style>
+
+<!--[partner 1]-->
+<div class='wc-pt-usr'>
+<img src='http://4.bp.blogspot.com/-Nvg5v49AWqw/VMO-76RV55I/AAAAAAAABEU/v6hM-iQh-CY/s1600/logo.png' alt='wendy code'/>
+<h2 aria-label='blog.choipanwendy.com'>Wendy Code</h2>
+<ul class='wc-pt-kt'>
+<li>Blogger</li>
+<li>Adsanse</li>
+<li>Widget</li>
+</ul>
+<p>Membahas tutorial seputar blogging blogger blogspot, widget dan tools gratis.</p>
+<a aria-label='kunjungi blog' href='#' target='_blank'><svg xmlns='http://www.w3.org/2000/svg' class='line' viewBox='0 0 24 24'><g transform='translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) translate(5.500000, 4.000000)'><line x1='6.7743' y1='15.7501' x2='6.7743' y2='0.7501'></line><path d='M12.7988,9.6998 C12.7988,9.6998 9.5378,15.7498 6.7758,15.7498 C4.0118,15.7498 0.7498,9.6998 0.7498,9.6998'></path></g></svg></a>
+</div>
+<!--[partner 1]-->
+
+<!--[partner 2]-->
+<div class='wc-pt-usr'>
+<img src='http://4.bp.blogspot.com/-Nvg5v49AWqw/VMO-76RV55I/AAAAAAAABEU/v6hM-iQh-CY/s1600/logo.png' alt='wendy code'/>
+<h2 aria-label='theme.choipanwendy.com'>Wendy Theme</h2>
+<ul class='wc-pt-kt'>
+<li>Toko Online</li>
+<li>Landing Page</li>
+</ul>
+<p>Website menyediakan template blogger toko online & landing page.</p>
+<a aria-label='kunjungi blog' href='#' target='_blank'><svg xmlns='http://www.w3.org/2000/svg' class='line' viewBox='0 0 24 24'><g transform='translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) translate(5.500000, 4.000000)'><line x1='6.7743' y1='15.7501' x2='6.7743' y2='0.7501'></line><path d='M12.7988,9.6998 C12.7988,9.6998 9.5378,15.7498 6.7758,15.7498 C4.0118,15.7498 0.7498,9.6998 0.7498,9.6998'></path></g></svg></a>
+</div>
+<!--[partner 2]-->
+
+<!--[partner 3]-->
+<div class='wc-pt-usr'>
+<img src='http://4.bp.blogspot.com/-Nvg5v49AWqw/VMO-76RV55I/AAAAAAAABEU/v6hM-iQh-CY/s1600/logo.png' alt='wendy code'/>
+<h2 aria-label='www.choipanwendy.com'>Choipan Wendy</h2>
+<ul class='wc-pt-kt'>
+<li>Choipan</li>
+<li>Vegetarian</li>
+<li>Talam Ebi</li>
+</ul>
+<p>website choipan khas pontianak.</p>
+<a aria-label='kunjungi blog' href='#' target='_blank'><svg xmlns='http://www.w3.org/2000/svg' class='line' viewBox='0 0 24 24'><g transform='translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) translate(5.500000, 4.000000)'><line x1='6.7743' y1='15.7501' x2='6.7743' y2='0.7501'></line><path d='M12.7988,9.6998 C12.7988,9.6998 9.5378,15.7498 6.7758,15.7498 C4.0118,15.7498 0.7498,9.6998 0.7498,9.6998'></path></g></svg></a>
+</div>
+<!--[partner 3]-->
+
+<!--[formulir]-->
+<div class='wc-ptpop-wrap'>
+<div class='wc-ptstr-pop'>
+<div class='wc-ptpop-cls' id='wc-pt-opcl'></div>
+<h2>Formulir Pendaftaran Partner</h2>
+<div class='wc-pt-inp'><input id='wc-nm-au' name='nama author' type='text' placeholder='Masukan Nama Anda' autocomplete='off'/><label>Nama</label></div>
+<div class='wc-pt-inp'><input id='wc-nm-blg' name='nama blog' type='text' placeholder='Masukan Nama Blog Anda' autocomplete='off'/><label>Blog</label></div>
+<div class='wc-pt-inp'><input id='wc-url-blg' name='url blog' type='text' placeholder='Masukan Url Blog Anda' autocomplete='off'/><label>Url</label></div>
+<div class='wc-pt-inp'><input id='wc-url-icn' name='icon blog' type='text' placeholder='Masukan Url Icon Blog Anda' autocomplete='off'/><label>Logo</label></div>
+<div class='wc-pt-inp'><input id='wc-lbl-blg' name='label blog' type='text' placeholder='Masukan Label Blog Anda Max 3' autocomplete='off'/><label>Label</label></div>
+<div class='wc-pt-inp'><input id='wc-ds-blg' name='deskripsi blog' type='text' placeholder='Masukan Deskripi Blog Anda' autocomplete='off'/><label>Deskripsi</label></div>
+<a class='wc-ptpop-btn wc-pt-send' href='javascript:;' title='kirim' type='submit'>KIRIM</a>
+</div></div>
+<!--[formulir]-->
+
+<!--[tombol]-->
+<div class='wc-btnpt-wrap'>
+<a class='wc-ptpop-btn' id='wc-pt-syrt' href='javascript:;'>Syarat Ketentuan</a>
+<a class='wc-ptpop-btn' id='wc-pt-popshw' href='javascript:;'>Daftar Sekarang</a>
+</div>
+<!--[tombol]-->
+
+<!--[syarat ketentuan]-->
+<div class='wc-ptsypop-wrap'>
+<div class='wc-ptsy-pop'>
+<div class='wc-ptpop-cls' id='wc-pt-csyrt'></div>
+<h2>Syarat & Ketentuan Menjadi Partner</h2>
+<p>1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+<p>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+  
+<p>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+</div></div>
+
+<!--[skrip tidak berfungsi jika Anda menghapus kredit pembuat || the script doesn't work if you remove the creator credit]-->
+<div id='wcpt-made-by'>https://blog.choipanwendy.com</div>
+
+<script>
+//<![CDATA[
+// formulir pendafaftaran partner by wendy code | javascript murni tanpa jquery 
+var wcPtWa = '6281311200000'; // nomor whatsapp kalian
+var wcPtPsn = 'hallo saya ingin mendaftar menjadi partner di blog wendy code' // pesan pembuka
+
+/* input formulir => opsional bisa di ubah atau tidak */
+var wcpt1 = 'nama : ';
+var wcpt2 = 'nama blog : ';
+var wcpt3 = 'url blog : ';
+var wcpt4 = 'url logo : ';
+var wcpt5 = 'label : ';
+var wcpt6 = 'deskripsi : ';
+
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('2r(1M(p,a,c,k,e,d){e=1M(c){1N c};2d(!\'\'.2f(/^/,2g)){2h(c--){d[c]=k[c]||c}k=[1M(e){1N d[e]}];e=1M(){1N\'\\\\w+\'};c=1};2h(c--){2d(k[c]){p=p.2f(2s 2t(\'\\\\b\'+e(c)+\'\\\\b\',\'g\'),k[c])}}1N p}(\'1l 55=["\\\\T\\\\C\\\\W\\\\J\\\\h\\\\C\\\\1b\\\\1g\\\\l\\\\R\\\\Y\\\\O\\\\54\\\\u\\\\Y\\\\1a\\\\l\\\\q\\\\D\\\\59\\\\54\\\\x\\\\s\\\\58\\\\m\\\\f\\\\H\\\\B\\\\o\\\\f\\\\H\\\\M\\\\1c\\\\1B\\\\H\\\\v\\\\54\\\\x\\\\J\\\\K","\\\\u\\\\f\\\\t\\\\D\\\\u\\\\58\\\\U\\\\1t\\\\f\\\\u\\\\58\\\\1h\\\\u\\\\1d\\\\D\\\\1C\\\\U\\\\1d\\\\1t\\\\1i\\\\l\\\\1d\\\\1c\\\\1B\\\\1C\\\\D\\\\1c\\\\1m\\\\1n\\\\H\\\\1t\\\\V\\\\1C\\\\O\\\\H\\\\J\\\\M\\\\P\\\\58\\\\1c\\\\M\\\\1i\\\\m\\\\q\\\\X\\\\1o\\\\j\\\\x\\\\1m\\\\1H\\\\1e\\\\j\\\\M\\\\L\\\\f\\\\1u\\\\t\\\\L\\\\1g\\\\F\\\\1t\\\\1o\\\\t\\\\1a\\\\s\\\\1i\\\\F\\\\1H\\\\s\\\\Z\\\\o\\\\H\\\\m\\\\Z\\\\S\\\\T\\\\o\\\\1C\\\\O\\\\h\\\\m\\\\v\\\\1n\\\\54\\\\1B\\\\v\\\\1u","\\\\53\\\\x\\\\D\\\\58\\\\53\\\\1d\\\\1p\\\\t\\\\m\\\\f\\\\W\\\\s\\\\l\\\\f\\\\1h\\\\H","\\\\1i\\\\C\\\\D\\\\J\\\\1c\\\\f\\\\1D\\\\s\\\\1i\\\\q\\\\1h\\\\Z\\\\o\\\\C\\\\s\\\\1H\\\\m\\\\q\\\\1m\\\\v\\\\T\\\\x\\\\53\\\\R\\\\54\\\\B\\\\V\\\\S\\\\o\\\\U\\\\59\\\\v\\\\o\\\\q\\\\o\\\\q\\\\1v\\\\1B\\\\D\\\\58\\\\o\\\\z\\\\1h\\\\j\\\\54\\\\q\\\\53\\\\F\\\\53\\\\u\\\\1m\\\\S\\\\G\\\\C\\\\D\\\\58\\\\m\\\\f\\\\H\\\\1H\\\\o\\\\q\\\\Y\\\\S\\\\53\\\\1d\\\\1p\\\\P\\\\T\\\\z\\\\j\\\\s\\\\1o\\\\v\\\\1F\\\\58\\\\h\\\\C\\\\F\\\\Y\\\\G\\\\B\\\\L\\\\s\\\\h\\\\q\\\\s\\\\S\\\\o\\\\x\\\\1m\\\\J\\\\m\\\\f\\\\H\\\\1H\\\\1c\\\\O\\\\1p\\\\j\\\\54\\\\q\\\\W\\\\s\\\\1c\\\\U\\\\59\\\\H\\\\1o\\\\1t\\\\M\\\\H\\\\1o\\\\1t\\\\t\\\\58\\\\54\\\\B\\\\D\\\\j\\\\53\\\\u\\\\s\\\\Z\\\\54\\\\v\\\\j\\\\q\\\\T\\\\z\\\\F\\\\s\\\\o\\\\U\\\\t\\\\J\\\\54\\\\B\\\\1n\\\\1g\\\\1b\\\\U\\\\t\\\\R\\\\T\\\\f\\\\53\\\\59\\\\53\\\\U\\\\59\\\\58\\\\1o\\\\x\\\\1D\\\\s\\\\o\\\\1a\\\\1e\\\\1g\\\\1b\\\\U\\\\t\\\\59\\\\o\\\\f\\\\s\\\\1a\\\\T\\\\C\\\\1e\\\\1g\\\\D\\\\1t\\\\1n\\\\s\\\\1o\\\\B\\\\W\\\\s\\\\1c\\\\C\\\\1e\\\\t\\\\m\\\\f\\\\1D\\\\j\\\\o\\\\x\\\\1u\\\\1g\\\\m\\\\x\\\\V\\\\S\\\\53\\\\u\\\\V\\\\R\\\\1o\\\\x\\\\1h\\\\F\\\\m\\\\x\\\\t\\\\1a\\\\h\\\\q\\\\Y\\\\1p\\\\54\\\\q\\\\1e\\\\1g\\\\G\\\\x\\\\m\\\\1u\\\\1o\\\\1t\\\\1n\\\\58\\\\1b\\\\U\\\\t\\\\O\\\\54\\\\B\\\\1h\\\\M\\\\o\\\\z\\\\G\\\\1g\\\\D\\\\z\\\\L\\\\1u\\\\G\\\\C\\\\D\\\\Z\\\\54\\\\u\\\\s\\\\M\\\\G\\\\1d\\\\1b\\\\J\\\\D\\\\U\\\\1e\\\\1H\\\\m\\\\x\\\\Y\\\\X\\\\54\\\\B\\\\G\\\\1g\\\\G\\\\x\\\\o\\\\q\\\\o\\\\v\\\\t\\\\58\\\\m\\\\f\\\\W\\\\M\\\\T\\\\f\\\\H\\\\1a\\\\1o\\\\v\\\\1b\\\\58\\\\h\\\\C\\\\1f\\\\1H\\\\o\\\\q\\\\Y\\\\S\\\\53\\\\1d\\\\1p\\\\q\\\\m\\\\f\\\\1p\\\\j\\\\54\\\\C\\\\M\\\\1g\\\\54\\\\f\\\\Y\\\\S\\\\54\\\\B\\\\D\\\\58\\\\m\\\\f\\\\D\\\\s\\\\1o\\\\x\\\\1h\\\\Z\\\\h\\\\q\\\\W\\\\s\\\\h\\\\O\\\\1p\\\\R\\\\m\\\\f\\\\W\\\\j\\\\53\\\\z\\\\1b\\\\1g\\\\1b\\\\1t\\\\L\\\\58\\\\1c\\\\C\\\\J\\\\v\\\\h\\\\u\\\\V\\\\R\\\\T\\\\f\\\\H\\\\1a\\\\m\\\\z\\\\W\\\\F\\\\54\\\\O\\\\L\\\\59\\\\D\\\\C\\\\t\\\\q\\\\54\\\\x\\\\H\\\\J\\\\l\\\\z\\\\D\\\\j\\\\1c\\\\q\\\\1F\\\\1g\\\\1b\\\\v\\\\L\\\\58\\\\1c\\\\U\\\\t\\\\v\\\\54\\\\x\\\\1D\\\\Z\\\\h\\\\v\\\\59\\\\v\\\\o\\\\q\\\\o\\\\q\\\\1v\\\\1t\\\\58\\\\Z\\\\h\\\\B\\\\W\\\\H\\\\54\\\\u\\\\1F\\\\1S\\\\1i\\\\u\\\\W\\\\j\\\\53\\\\O\\\\L\\\\j\\\\o\\\\U\\\\J\\\\O\\\\h\\\\u\\\\V\\\\R\\\\T\\\\f\\\\H\\\\1a\\\\m\\\\z\\\\W\\\\F\\\\54\\\\O\\\\G\\\\1S\\\\1i\\\\u\\\\1f\\\\J\\\\1i\\\\M\\\\D\\\\X\\\\54\\\\x\\\\H\\\\s\\\\G\\\\1C\\\\W\\\\s\\\\53\\\\u\\\\V\\\\v\\\\53\\\\u\\\\s\\\\Z\\\\54\\\\v\\\\58\\\\Z\\\\T\\\\U\\\\1e\\\\1S\\\\1i\\\\C\\\\1n\\\\1S\\\\h\\\\x\\\\t\\\\R\\\\T\\\\z\\\\1n\\\\1f\\\\53\\\\u\\\\s\\\\M\\\\m\\\\f\\\\X\\\\1f\\\\m\\\\q\\\\V\\\\R\\\\o\\\\1a\\\\V\\\\S\\\\o\\\\B\\\\D\\\\j\\\\G\\\\u\\\\j\\\\j\\\\T\\\\x\\\\1C\\\\1f\\\\1e\\\\f\\\\H\\\\M\\\\m\\\\1B\\\\L\\\\t\\\\o\\\\f\\\\H\\\\1a\\\\T\\\\u\\\\1m\\\\58\\\\53\\\\z\\\\1b\\\\1f\\\\T\\\\B\\\\1h\\\\s\\\\o\\\\u\\\\s\\\\J\\\\G\\\\C\\\\L\\\\s\\\\54\\\\f\\\\1h\\\\1p\\\\m\\\\z\\\\1e\\\\1f\\\\1v\\\\C\\\\58\\\\1f\\\\53\\\\u\\\\F\\\\s\\\\G\\\\C\\\\D\\\\v\\\\h\\\\q\\\\s\\\\58\\\\53\\\\1d\\\\L\\\\M\\\\54\\\\x\\\\V\\\\P\\\\54\\\\O\\\\m\\\\v\\\\1b\\\\U\\\\1b\\\\H\\\\1o\\\\B\\\\1e\\\\1f\\\\53\\\\x\\\\Y\\\\R\\\\T\\\\R\\\\L\\\\j\\\\o\\\\O\\\\L\\\\H\\\\54\\\\B\\\\1F\\\\1f\\\\h\\\\q\\\\V\\\\t\\\\54\\\\B\\\\o\\\\s\\\\G\\\\C\\\\W\\\\59\\\\o\\\\1B\\\\L\\\\v\\\\h\\\\q\\\\V\\\\F\\\\53\\\\u\\\\Y\\\\R\\\\G\\\\u\\\\D\\\\R\\\\o\\\\f\\\\W\\\\j\\\\53\\\\U\\\\58\\\\Z\\\\h\\\\U\\\\1u\\\\2i\\\\h\\\\U\\\\H\\\\59\\\\53\\\\C\\\\W\\\\58\\\\h\\\\P\\\\59\\\\Z\\\\l\\\\x\\\\1h\\\\X\\\\54\\\\x\\\\h\\\\S\\\\m\\\\x\\\\F\\\\Z\\\\T\\\\z\\\\L\\\\F\\\\54\\\\1a\\\\53\\\\s\\\\54\\\\q\\\\W\\\\H\\\\l\\\\q\\\\D\\\\Z\\\\54\\\\1t\\\\58\\\\Z\\\\h\\\\U\\\\1u\\\\2i\\\\h\\\\B\\\\L\\\\F\\\\54\\\\O\\\\L\\\\j\\\\o\\\\U\\\\J\\\\O\\\\m\\\\q\\\\1m\\\\J\\\\m\\\\z\\\\1b\\\\t\\\\53\\\\x\\\\1m\\\\1q\\\\53\\\\C\\\\1F\\\\t\\\\53\\\\u\\\\V\\\\t\\\\h\\\\u\\\\1D\\\\F\\\\53\\\\u\\\\1F\\\\O\\\\1i\\\\v\\\\G\\\\58\\\\1i\\\\1d\\\\Y\\\\P\\\\h\\\\u\\\\1m\\\\S\\\\1i\\\\v\\\\58\\\\Z\\\\o\\\\u\\\\s\\\\x\\\\1i\\\\1f\\\\K\\\\K","\\\\m\\\\q\\\\1m\\\\J\\\\m\\\\z\\\\1b\\\\t\\\\53\\\\x\\\\1m\\\\1q\\\\53\\\\C\\\\1F\\\\t\\\\53\\\\u\\\\V\\\\t\\\\h\\\\u\\\\1D\\\\F\\\\53\\\\u\\\\1F\\\\K","\\\\1e\\\\M\\\\Y\\\\1C\\\\f\\\\1e\\\\K\\\\K","\\\\l\\\\1a\\\\53\\\\v\\\\l\\\\z\\\\L\\\\J\\\\l\\\\z\\\\D\\\\s\\\\54\\\\q\\\\1e\\\\K","\\\\G\\\\B\\\\53\\\\v\\\\l\\\\f\\\\H\\\\t\\\\l\\\\f\\\\1m\\\\1p","\\\\G\\\\B\\\\53\\\\v\\\\l\\\\f\\\\H\\\\t\\\\l\\\\f\\\\1h\\\\X\\\\o\\\\58\\\\K\\\\K","\\\\G\\\\B\\\\53\\\\v\\\\l\\\\z\\\\V\\\\R\\\\54\\\\1d\\\\1p\\\\O\\\\54\\\\u\\\\h\\\\K","\\\\G\\\\B\\\\53\\\\v\\\\l\\\\z\\\\V\\\\R\\\\54\\\\1d\\\\1p\\\\j\\\\m\\\\x\\\\1u\\\\K","\\\\G\\\\B\\\\53\\\\v\\\\l\\\\f\\\\1D\\\\O\\\\54\\\\1d\\\\1p\\\\O\\\\54\\\\u\\\\h\\\\K","\\\\G\\\\B\\\\53\\\\v\\\\l\\\\f\\\\W\\\\P\\\\l\\\\f\\\\1h\\\\X\\\\o\\\\58\\\\K\\\\K","\\\\G\\\\B\\\\53\\\\v\\\\l\\\\z\\\\L\\\\J\\\\l\\\\f\\\\Y\\\\58\\\\m\\\\x\\\\58\\\\K","\\\\l\\\\1a\\\\53\\\\v\\\\l\\\\z\\\\L\\\\J\\\\h\\\\u\\\\Y\\\\58\\\\l\\\\z\\\\53\\\\R\\\\m\\\\z\\\\1n\\\\K","\\\\m\\\\f\\\\t\\\\J\\\\T\\\\f\\\\m\\\\K","\\\\G\\\\B\\\\53\\\\v\\\\l\\\\z\\\\L\\\\J\\\\l\\\\z\\\\L\\\\Z\\\\h\\\\C\\\\D\\\\59\\\\53\\\\58\\\\K\\\\K","\\\\G\\\\B\\\\53\\\\v\\\\l\\\\z\\\\L\\\\J\\\\l\\\\z\\\\D\\\\H\\\\h\\\\1a\\\\1e\\\\K","\\\\l\\\\1a\\\\53\\\\v\\\\l\\\\z\\\\L\\\\J\\\\h\\\\B\\\\s\\\\58\\\\54\\\\B\\\\1n\\\\t\\\\53\\\\B\\\\1h\\\\F\\\\h\\\\1n\\\\K\\\\K","\\\\G\\\\B\\\\53\\\\v\\\\l\\\\z\\\\L\\\\J\\\\l\\\\f\\\\D\\\\P\\\\1c\\\\z\\\\1h\\\\J","\\\\53\\\\x\\\\F\\\\F\\\\53\\\\C\\\\D\\\\F\\\\h\\\\C\\\\1n\\\\1g\\\\l\\\\R\\\\Y\\\\P\\\\o\\\\f\\\\H\\\\M","\\\\T\\\\C\\\\W\\\\J\\\\h\\\\C\\\\1b\\\\1g\\\\l\\\\R\\\\Y\\\\B\\\\o\\\\f\\\\G\\\\S\\\\53\\\\x\\\\F\\\\F\\\\53\\\\C\\\\D\\\\F\\\\h\\\\C\\\\1n\\\\S\\\\m\\\\x\\\\Y\\\\t\\\\l\\\\B\\\\D\\\\s\\\\54\\\\q\\\\1e\\\\K","","\\\\58\\\\59\\\\P\\\\S\\\\j\\\\F","\\\\M\\\\F\\\\X\\\\54\\\\V\\\\1q\\\\t\\\\59\\\\1J\\\\j","\\\\M\\\\F\\\\X\\\\54\\\\1J\\\\j","\\\\2j\\\\O\\\\59\\\\h\\\\l\\\\j\\\\54","\\\\54\\\\59\\\\1c\\\\58\\\\X\\\\M\\\\59","\\\\53\\\\P\\\\t\\\\59\\\\1D\\\\G\\\\1f","\\\\1f\\\\54\\\\1q\\\\q\\\\V\\\\F\\\\X\\\\54\\\\V\\\\1q\\\\t\\\\59","\\\\2u","\\\\t\\\\59","\\\\S\\\\59\\\\j\\\\1d\\\\58\\\\59\\\\q\\\\59\\\\P\\\\j\\\\z\\\\h\\\\C\\\\t","\\\\53\\\\P\\\\P\\\\59\\\\54\\\\1i\\\\1C\\\\o\\\\1B","\\\\S\\\\59\\\\j\\\\1d\\\\58\\\\59\\\\q\\\\59\\\\P\\\\j\\\\1v\\\\z\\\\h\\\\1C\\\\X\\\\S\\\\m\\\\X\\\\q\\\\59","\\\\F\\\\54\\\\59\\\\1f","\\\\58\\\\1q\\\\M\\\\X\\\\j\\\\53\\\\1q\\\\P","\\\\R\\\\X\\\\58\\\\1T\\\\59","\\\\1a\\\\1T\\\\59\\\\54\\\\h\\\\l\\\\59\\\\58\\\\59\\\\M\\\\j\\\\1q\\\\54","\\\\1f\\\\1q\\\\M\\\\1T\\\\1v","\\\\1T\\\\1v\\\\59\\\\54\\\\1J\\\\S\\\\59\\\\P\\\\j","\\\\j\\\\59\\\\1v\\\\j","\\\\2v\\\\1c\\\\F\\\\1q\\\\P\\\\59\\\\K","\\\\2w\\\\j\\\\59\\\\1D\\\\j\\\\K","\\\\2e\\\\1u\\\\1J\\\\2e\\\\1u\\\\1J","\\\\2e\\\\1u\\\\1J","\\\\2j\\\\s\\\\58\\\\X\\\\P\\\\O","\\\\1q\\\\1c\\\\59\\\\P","\\\\j\\\\1q\\\\S\\\\S\\\\58\\\\59","\\\\M\\\\58\\\\X\\\\1v\\\\1v\\\\1B\\\\53\\\\1v\\\\j","\\\\M\\\\58\\\\53\\\\M\\\\O","\\\\X\\\\t\\\\t\\\\1d\\\\R\\\\59\\\\P\\\\j\\\\1B\\\\53\\\\1v\\\\j\\\\59\\\\P\\\\59\\\\54"];1l 52=[55[0],55[1],55[2],55[3],55[4],55[5],55[6],55[7],55[8],55[9],55[10],55[11],55[12],55[13],55[14],55[15],55[16],55[17],55[18],55[19],55[20],55[21],55[22],55[23],55[24],55[25],55[26],55[27],55[28],55[29],55[30],55[31],55[32],55[33],55[34],55[35],55[36],55[37],55[38],55[39],55[40],55[41],55[42],55[43],55[44],55[45],55[46],55[47],55[48],55[49],55[50],55[51]];1l 57=[52[0],52[1],52[2],52[3],52[0],52[4],52[5],52[6],52[7],52[8],52[9],52[10],52[11],52[12],52[13],52[14],52[15],52[16],52[17],52[18],52[19],52[20],52[21]],56={2x:2y(57[1]),2z:1j(E){1l Q,N,I,1E,1x,1y,1k,1r=52[22],1O=0;1U(E=56.2k(E);1O<E[52[23]];){1E=(Q=E[52[24]](1O++))>>2,1x=(3&Q)<<4|(N=E[52[24]](1O++))>>4,1y=(15&N)<<2|(I=E[52[24]](1O++))>>6,1k=1I&I,2l(N)?1y=1k=1V:2l(I)&&(1k=1V),1r=1r+1G[52[26]][52[25]](1E)+1G[52[26]][52[25]](1x)+1G[52[26]][52[25]](1y)+1G[52[26]][52[25]](1k)};1W 1r},2A:1j(E){1l Q,N,I,1E,1x,1y,1k=52[22],1r=0;1U(E=E[52[27]](/[^2B-2C-2D-9\\\\+\\\\/\\\\=]/2m,52[22]);1r<E[52[23]];){Q=1G[52[26]][52[28]](E[52[25]](1r++))<<2|(1E=1G[52[26]][52[28]](E[52[25]](1r++)))>>4,N=(15&1E)<<4|(1x=1G[52[26]][52[28]](E[52[25]](1r++)))>>2,I=(3&1x)<<6|(1y=1G[52[26]][52[28]](E[52[25]](1r++))),1k+=1s[52[29]](Q),1V!=1x&&(1k+=1s[52[29]](N)),1V!=1y&&(1k+=1s[52[29]](I))};1W 56.2n(1k)},2k:1j(E){E=E[52[27]](/\\\\2E\\\\2F/2m,52[30]);1U(1l Q=52[22],N=0;N<E[52[23]];N++){1l I=E[52[24]](N);I<1P?Q+=1s[52[29]](I):I>2G&&I<2H?(Q+=1s[52[29]](I>>6|2I),Q+=1s[52[29]](1I&I|1P)):(Q+=1s[52[29]](I>>12|2o),Q+=1s[52[29]](I>>6&1I|1P),Q+=1s[52[29]](1I&I|1P))};1W Q},2n:1j(E){1U(1l Q=52[22],N=0,I=2J=1Q=0;N<E[52[23]];){(I=E[52[24]](N))<1P?(Q+=1s[52[29]](I),N++):I>2K&&I<2o?(1Q=E[52[24]](N+1),Q+=1s[52[29]]((31&I)<<6|1I&1Q),N+=2):(1Q=E[52[24]](N+1),2p=E[52[24]](N+2),Q+=1s[52[29]]((15&I)<<12|(1I&1Q)<<6|1I&2p),N+=3)};1W Q}};1w(y[52[32]](56[52[31]](57[2]))){1l 1X=y[52[32]](56[52[31]](57[2])),1Y=56[52[31]](57[4]),1K=56[52[31]](57[3]),1z=20;1w(1X[52[33]]==1Y){}1A{(1R=y[52[34]](56[52[31]](57[6]))[0])[52[33]]=1K,1Z(1j(){1z<=1?1L[52[36]][52[35]]=56[52[31]](57[0]):y[52[32]](56[52[31]](57[5]))[52[33]]=--1z},2a)}}1A{(1R=y[52[34]](56[52[31]](57[6]))[0])[52[33]]=1K,1Z(1j(){1z<=1?1L[52[36]][52[35]]=56[52[31]](57[0]):y[52[32]](56[52[31]](57[5]))[52[33]]=--1z},2a)};1j 2q(){1l E=56[52[31]](57[22]),Q=2L,N=y[52[38]](56[52[31]](57[8]))[52[37]],I=y[52[38]](56[52[31]](57[9]))[52[37]],1E=y[52[38]](56[52[31]](57[10]))[52[37]],1x=y[52[38]](56[52[31]](57[11]))[52[37]],1y=y[52[38]](56[52[31]](57[12]))[52[37]],1k=y[52[38]](56[52[31]](57[13]))[52[37]];1w(52[22]===N){y[52[38]](56[52[31]](57[8]))[52[39]]()}1A{1w(52[22]===I){y[52[38]](56[52[31]](57[9]))[52[39]]()}1A{1w(52[22]===1E){y[52[38]](56[52[31]](57[10]))[52[39]]()}1A{1w(52[22]===1x){y[52[38]](56[52[31]](57[11]))[52[39]]()}1A{1w(52[22]===1y){y[52[38]](56[52[31]](57[12]))[52[39]]()}1A{1w(52[22]===1k){y[52[38]](56[52[31]](57[13]))[52[39]]()}1A{1w(/2M|2N|2O|2P|2Q|2R|2S|2T 2U/2V[52[41]](2W[52[40]])){E=56[52[31]](57[21])};1l 1r=E+52[42]+Q+52[43]+2X+52[44]+2Y+N+52[45]+2Z+I+52[45]+3a+1E+52[45]+3b+1x+52[45]+3c+1y+52[45]+3d+1k;1L[52[47]](1r,52[46]),1L[52[36]][52[35]]=3e[52[35]]}}}}}}}1j 2b(){y[52[38]](56[52[31]](57[15]))[52[49]][52[48]](56[52[31]](57[16]))}1j 2b(){y[52[38]](56[52[31]](57[15]))[52[49]][52[48]](56[52[31]](57[16]))}1j 2c(){y[52[38]](56[52[31]](57[19]))[52[49]][52[48]](56[52[31]](57[16]))}1j 2c(){y[52[38]](56[52[31]](57[19]))[52[49]][52[48]](56[52[31]](57[16]))}1w(y[52[38]](56[52[31]](57[7]))[52[51]](52[50],2q),y[52[38]](56[52[31]](57[14]))[52[51]](52[50],2b),y[52[38]](56[52[31]](57[17]))[52[51]](52[50],2b),y[52[38]](56[52[31]](57[18]))[52[51]](52[50],2c),y[52[38]](56[52[31]](57[20]))[52[51]](52[50],2c),y[52[32]](56[52[31]](57[2]))){1X=y[52[32]](56[52[31]](57[2])),1Y=56[52[31]](57[4]),1K=56[52[31]](57[3]),1z=20;1w(1X[52[33]]==1Y){}1A{(1R=y[52[34]](56[52[31]](57[6]))[0])[52[33]]=1K,1Z(1j(){1z<=1?1L[52[36]][52[35]]=56[52[31]](57[0]):y[52[32]](56[52[31]](57[5]))[52[33]]=--1z},2a)}}1A{1l 1R;(1R=y[52[34]](56[52[31]](57[6]))[0])[52[33]]=1K,1Z(1j(){1z<=1?1L[52[36]][52[35]]=56[52[31]](57[0]):y[52[32]](56[52[31]](57[5]))[52[33]]=--1z},2a)}\',10,3f,\'||||||||||||||||||||||||||||||||||||||||||||||||||||3g|3h|3i|3j|3k|3l|3m|3n|3o|3p|3q|||3r|3s|3t|3u|3v|3w|3x|3y|3z|3A|3B|3C|3D|3E|3F|3G|3H|3I|3J|3K|3L|3M|3N|3O|3P|3Q|3R|3S|3T|3U|3V|3W|3X|3Y|3Z|4a|4b|4c|4d|4e|4f|4g|4h|4i|4j|4k|1M|4l|2g|4m|4n|4o|4p|4q|4r|4s|4t|2d|4u|4v|4w|4x|||4y|4z|4A|4B|4C|4D|4E|4F|4G|4H|4I|4J|4K|4L|4M|1N|4N|4O|4P|4Q|4R|4S|4T|4U|4V|4W|4X|4Y|4Z|5a|5b|g|5c|5d|5e|5f|5g|5h|5i|5j|5k|5l|i|5m|5n|5o|5p|5q|5r|5s|5t|5u|5v|5w|5x|5y|5z|r|5A|5B|5C|5D|||5E|5F|A|5G|5H|n\'.5I(\'|\'),0,{}))',62,355,'|||||||||||||||60||61||62||65|67||66||68||69|70|71|72||74|73|75||76|79|78|77|80|81|83|82|84|85|86|87|88|90|91|89|93|92|95|96|94|97|98|99|100|||||||||||101|105|102|103|106|104|108|109|107|111|110|112|119|115|114|117|116|118|113|120|121|123|122|126|124|129|125|133|130|131|132|134|135|136|63|137|138|139|function|return|141|128|142|140|146|143|145|64|144|150|149|148|||||||||||147|152|151|if|153|replace|String|while|162|158|159|156|160|155|154|157|161|eval|new|RegExp|174|183|181|188|189|190|194|195|196|197|186|198|127|193|192|187|191|185|180|184|164|165|166|167|168|169|170|171|163|175|178|179|||||||||||182|173|172|177|176|199|_0xe360|x69|x72|_0x2b55|Wc|ptarr|x6C|x65|x56|x79|x74|x53|x4D|x4E|x6D|x62|x64|x55|x7A|document|x36|x42|x38|_0x5804x4|x46|x49|x68|x4F|_0x5804x7|x31|x33|x3D|x57|x63|_0x5804x6|_0x5804x5|x6B|x6E|x67|x76|x43|x77|x52|x4B|x61|x34|||||||||||x6A|x71|x70|x45|x66|x44|x4A|x48|x39|x50|_0x5804xb|var|x47|x51|x6F|x35|_0x5804xc|x59|x5A|x30|x73|_0x5804xa|else|_0x5804x9|input|x54|x78|_0x5804x8|x4C|x58|this|x32|x41|infb|window|bdyt|_0x5804xd|c2|x75|for|x2B|1e3|setInterval|sck|slc|syrt|openclose|x25|224|_utf8_de|isNaN|c3|||||||||||x5F|_utf8_en|wwch|x37|navigator|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera|Mini|wcpt5|wcpt4|x0A|wcPtPsn|location|wcpt6|wcpt1|wcpt2|Android|x26|wcpt3|x3F|webOS|wcPtWa|c1|_keyStr|atob|en|2048|de|Za|z0|split'.split('|'),0,{}))
+//]]> 
+</script>
